@@ -119,7 +119,7 @@
             return;
         }
 
-        if (taskWeight === "" || taskWeight < 1 || taskWeight > 100) {
+        if (taskWeight === "" || insNaN(taskWeight)|| taskWeight < 1 || taskWeight > 100) {
             displayMsg("Weight rejected.");
             return;
         }
